@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(249, 194, 194);
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 180px;
+  min-height: 130px;
+  justify-content: space-between;
+  font-size: 36px;
+  background-color: #d9a08b;
+  margin: 150px 0px 5px 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: rgb(2, 2, 2);
+  border-radius: 5px;
+}
+
+.firstSide {
+  font-size: 24px;
+  margin: 0px 10px;
+}
+
+.secondNumber {
+  margin: 0px 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  max-width: 300px;
+  min-width: 300px;
+  margin: 0px 150px 0px;
+  border-style: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 0px;
+  margin: 2px;
+  background-color: rgba(91, 46, 180, 0.215);
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #a6654e;
+  border-radius: 5px;
+}
+
+.clear {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.equal {
+  grid-area: 5 / 3 / 6 / 5;
+}
